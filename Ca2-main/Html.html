@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/71e0b3e869.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<script>
+    //js functions for opening and closing the sidenav
+    function openNav() {
+      document.getElementById("sidenav").style.width = "13rem";
+      document.getElementById("content").style.marginRight = "13rem";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+      document.getElementById("content").style.marginRight= "0";
+    }
+    </script>
+<body>
+    <!-- everything inside the sidenav -->
+    <div id="sidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        <a href="Css.html"><p>Css</p></a>
+        <a href="flexbox.html"><p>Flexbox</p></a>
+        <a href="Colour.html"><p>Colour</p></a>
+      </div>
+<div id ="content">
+    <nav>
+        <h1>SD</h1>
+        <!-- calling the js function -->
+        <span  onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
+    </nav>
+    <header>
+        <section>
+        <h1>HTML</h1>
+        <p>Hyper Text Markup Language</p>
+        </section>
+        <img src="media/HTML3.png" alt="cum">
+    </header>
+
+    <main>
+        <section class="section_box">
+        <h1>What is HTML?</h1>
+            <p>HTML stands for HyperText Markup language, Hypertext meaning a meta text that is used to refer to other pieces of text, and markup language meaning that it provides a series of elements and tags that instruct what the web browser should be doing with the text.</p>
+            <p> HTML is the standard system for tagging text files to create the structure for just about every webpage we use  today, this includes links, tags, web page layouts and paragraphs. Each time we click on a web page on the internet, HTML will most likely be present. </p>
+        </section>
+        <section class="section_box">
+            <h1>Some common things HTML defines in websites include:</h1>
+            <p>Paragraphs: One of the most common elements found in HTML and it defines a paragraph.</p>
+            <p>Headings: Each heading tag beginning with the letter h and ending in a number between 1 to 6, h1 being the biggest header and h6 being the smallest.</p>
+            <p>Block Elements: Allows spacing below themselves on a web page, display vertically on the left hand side of the webpage until styled by</p>
+
+            </section>
+            <section class="section_box">
+                <h1>HTML Features</h1>
+                <p>Simple & User Friendly: Although HTML 5 comes with over 100s of built in tags into it only a handful of these tags actually get used regularly in normal web development</p>
+    
+                <p>Presentation Friendly: It is easy to make an effective presentation with HTML due to amount of format tags there are to use.</p>
+    
+                <p>HTML is platform independant: HTML runs off a browser and any device that you can find that has an operating system can run HTML</p>
+    
+                </section>
+    </main>
+    <footer>
+        <p>Project by: Adrian Donnelly, David Byrne, Adrian Costea, Sean Connaughton</p>
+    </footer>
+</div>
+</body>
+</html>
