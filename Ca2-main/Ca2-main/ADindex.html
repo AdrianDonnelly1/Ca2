@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/71e0b3e869.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<script>
+    //js functions for opening and closing the sidenav
+    function openNav() {
+      document.getElementById("sidenav").style.width = "13rem";
+      document.getElementById("content").style.marginRight = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+      document.getElementById("content").style.marginRight= "0";
+    }
+    </script>
+<body>
+    <!-- everything inside the sidenav -->
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><p>Html</p></a>
+        <a href="#"><p>Css</p></a>
+        <a href="#"><p>Colour</p></a>
+      </div>
+<div id ="content">
+    <nav>
+        <h1>AD</h1>
+        <!-- calling the js function -->
+        <span  onclick="openNav()"> <h1> <i class="fa-solid fa-equals"></i></h1></span>
+    </nav>
+    <header>
+        <section>
+        <h1>Flexbox</h1>
+        <p>Responive Web development</p>
+        </section>
+        <img src="media/Group 1fy.png" alt="cum">
+    </header>
+
+    <main>
+        <section class="section_box">
+        <h1>What is Flexbox?</h1>
+            <p>Flexbox is a layout mode in CSS3 that makes it easier to create responsive, flexible layouts and align items in a row or a column. 
+            It allows us to easily specify the size, position and order of elements, even when their size is unknown or dynamic. It also helps us to create complex,
+            responsive designs with relative ease.</p>
+        </section>
+        <section class="section_box">
+            <h1>Why Flexbox?</h1>
+                <p> Flexbox is a great tool for creating responsive layouts. It allows you to easily adjust the size and position of elements on the page,
+                 while also making sure they look good on different devices and screen sizes.
+                 It also helps you create complex layouts with ease, and can be used to create components like navigation menus, grid systems and more..</p>
+            </section>
+            <section class="section_box">
+                <h1>Learning about Flexbox</h1>
+                    <p>  A great resource to learn more about it is the MDN web docs. They have a comprehensive guide covering all aspects of Flexbox,
+                     from basic usage to more advanced topics. Other great resources for learning about Flexbox include CSS-Tricks,
+                     W3Schools, and the official Flexbox documentation from the W3C.</p>
+                </section>
+    </main>
+    <footer>
+        <p>Project by: Adrian Donnelly, David Byrne, Adrian Costea, Sean Connaughton</p>
+    </footer>
+</div>
+</body>
+</html>
