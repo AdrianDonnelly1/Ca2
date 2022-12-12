@@ -59,6 +59,7 @@ main{
 img{
    min-width: 25rem;
    max-width: 40rem;
+   max-height: 27rem;
    margin: 1rem;
 }
 footer{
