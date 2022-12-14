@@ -8,7 +8,7 @@ body{
 header h1{
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
 
 }
 h1{
@@ -52,6 +52,53 @@ main{
     margin-top: 10rem;
     height: 30rem;
 }
+@media screen and (max-width: 640px) {
+  header{
+    flex-direction: column;
+  }
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: block;
+    min-width: 5rem;
+    max-width: 20rem;
+    margin: 1rem;
+  }
+  main{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25rem;
+    margin-bottom: 18rem;
+    margin-left: 1rem
+  }
+  .section_box{
+    align-items: center;
+  }
+  .section_box p {
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+  .section_box h1{
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+  
+}
+
+@media screen and (min-width: 640px) {
+  header{
+    flex-direction: row;
+  }
+  .img1{
+    display: block;
+  }
+  .img2{
+    display: none;
+    
+  }
+}
+
 .section_box{
     display: flex;
     flex-direction: column;
@@ -72,14 +119,13 @@ footer{
     height: 5rem;
     width: 100%;
     margin:0%;
-    padding: 0%;
     filter: drop-shadow(0px 5px 5px #acacac);
 }
 footer p{
     font-weight: 600;
 }
 .sidenav {
-    height: 100%;
+    height: 90%;
     width: 0;
     position: fixed;
     z-index: 1;
