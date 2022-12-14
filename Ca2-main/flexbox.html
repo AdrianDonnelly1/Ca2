@@ -22,19 +22,19 @@
     //second function in both opening and cloing moves the content of main to the left by 13rem
     function openNav() {
       document.getElementById("sidenav").style.width = "13rem";
-      console.log(open.matches)
+      console.log(open.matches);
       if (open.matches) {
         document.getElementById("content").style.marginRight = "13rem";
       } else {
         document.getElementById("content").style.marginRight = "0rem";
       }
     }
-   
+
     function closeNav() {
       document.getElementById("sidenav").style.width = "0";
       document.getElementById("content").style.marginRight = "0";
     }
-    var open = window.matchMedia('(min-width: 640px)')
+    var open = window.matchMedia("(min-width: 640px)");
   </script>
   <body>
     <!-- everything inside the sidenav -->
@@ -45,6 +45,7 @@
         ><i class="fa-solid fa-x"></i
       ></a>
       <a href="Colour.html"><p>Colour</p></a>
+      <a href="Accessibility.html"><p>Accessibility</p></a>
       <a href="Html.html"><p>Html</p></a>
       <a href="Css.html"><p>Css</p></a>
     </div>
