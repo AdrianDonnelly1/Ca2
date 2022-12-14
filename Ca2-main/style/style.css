@@ -122,6 +122,11 @@ main {
   }
 }
 
+.davidimg{
+  width: 20rem;
+  
+}
+
 .section_box {
   display: flex;
   flex-direction: column;
