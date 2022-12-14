@@ -134,6 +134,21 @@ a:hover {
   
 }
 
+.html{
+ max-width: 27rem;
+}
+
+img.accessibilityIMG{
+max-width: 10%;
+margin-top: 5%;
+}
+
+img.colour_wheelIMG{
+  margin-top: 5%;
+  max-width: 5%;
+}
+
+
 .section_box {
   display: flex;
   flex-direction: column;
