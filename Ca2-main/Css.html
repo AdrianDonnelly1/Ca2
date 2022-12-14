@@ -16,7 +16,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <!-- everything inside the sidenav -->
     <div id="sidenav" class="sidenav">
@@ -30,8 +29,9 @@
     </div>
     <div id="content">
       <nav>
-        <h1>DB</h1>
-        <!-- calling the js function -->
+        <a href="https://github.com/AdrianDonnelly1/Ca2"><h1>DB</h1></a>
+
+        <!-- calling the js function with the button-->
         <span onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
       </nav>
       <header>
@@ -50,7 +50,7 @@
             one original style or you can use multiple style sheets by just
             linking the in the html file under theyr name to give each a page a
             diffrent feel. Developers use CSS in they websites to give it a
-            diffrent feel other wise it would just be a plain white page with
+            diffrent feel other wise it woSuld just be a plain white page with
             content on it.
           </p>
         </section>
@@ -106,7 +106,8 @@
         if (open.matches) content.style.marginRight = "13rem";
         else content.style.marginRight = "0rem";
       }
-  
+      //close nav function
+      //changes with to 0, making it invisible
       function closeNav() {
         side_nav.style.width = "0";
         content.style.marginRight = "0";

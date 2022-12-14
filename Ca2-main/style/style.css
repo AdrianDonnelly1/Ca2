@@ -19,6 +19,7 @@ h1 {
 
 nav h1 {
   font-size: 2rem;
+  
 }
 
 main h1 {
@@ -58,7 +59,13 @@ main {
   margin-top: 10rem;
 
 }
-
+a:link{
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: rgb(107, 107, 107);
+  }
 @media screen and (max-width: 640px) {
   header {
     flex-direction: column;
@@ -138,11 +145,6 @@ img {
   min-width: 25rem;
   max-width: 40rem;
   margin: 1rem;
-}
-
-  img.accessibilityIMG{
-  margin-top: 10%;
-  width: 3%;
 }
 
 footer {

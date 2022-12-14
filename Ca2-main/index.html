@@ -30,7 +30,7 @@
     </div>
     <div id="content">
       <nav>
-        <h1>AD</h1>
+        <a href="https://github.com/AdrianDonnelly1/Ca2"><h1>AD</h1></a>
         <!-- calling the js function -->
         <span onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
       </nav>
@@ -87,21 +87,21 @@
       //changing the width of the side nave from 0(closed) to 13rem(open)
       //second function in both opening and cloing moves the content of main to the left by 13rem
       const side_nav = document.getElementById("sidenav"),
-         content = document.getElementById("content");
-  
+        content = document.getElementById("content");
+
       function openNav() {
         side_nav.style.width = "13rem";
         console.log(open.matches);
-  
+
         if (open.matches) content.style.marginRight = "13rem";
         else content.style.marginRight = "0rem";
       }
-  
+
       function closeNav() {
         side_nav.style.width = "0";
         content.style.marginRight = "0";
       }
-  
+
       const open = window.matchMedia("(min-width: 640px)");
     </script>
   </body>
