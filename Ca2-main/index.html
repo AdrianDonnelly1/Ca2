@@ -16,20 +16,6 @@
       rel="stylesheet"
     />
   </head>
-  <script>
-    //js functions for opening and closing the sidenav
-    //changing the width of the side nave from 0(closed) to 13rem(open)
-    //second function in both opening and cloing moves the content of main to the left by 13rem
-    function openNav() {
-      document.getElementById("sidenav").style.width = "13rem";
-      document.getElementById("content").style.marginRight = "13rem";
-    }
-
-    function closeNav() {
-      document.getElementById("sidenav").style.width = "0";
-      document.getElementById("content").style.marginRight = "0";
-    }
-  </script>
   <body>
     <!-- everything inside the sidenav -->
     <!-- colose button (X) when click calls the js function for closing it -->
@@ -96,5 +82,27 @@
         </p>
       </footer>
     </div>
+    <script>
+      //js functions for opening and closing the sidenav
+      //changing the width of the side nave from 0(closed) to 13rem(open)
+      //second function in both opening and cloing moves the content of main to the left by 13rem
+      const side_nav = document.getElementById("sidenav"),
+         content = document.getElementById("content");
+  
+      function openNav() {
+        side_nav.style.width = "13rem";
+        console.log(open.matches);
+  
+        if (open.matches) content.style.marginRight = "13rem";
+        else content.style.marginRight = "0rem";
+      }
+  
+      function closeNav() {
+        side_nav.style.width = "0";
+        content.style.marginRight = "0";
+      }
+  
+      const open = window.matchMedia("(min-width: 640px)");
+    </script>
   </body>
 </html>
