@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- everything inside the sidenav -->
     <div id="sidenav" class="sidenav">
@@ -25,65 +26,50 @@
       <a href="flexbox.html"><p>Flexbox</p></a>
       <a href="Colour.html"><p>Colour</p></a>
       <a href="Accessibility.html"><p>Accessibility</p></a>
-      <a href="bio.html"><p>Bio</p></a>
       <a href="Html.html"><p>Html</p></a>
+      <a href="Css.html"><p>Css</p></a>
+      
     </div>
     <div id="content">
       <nav>
-        <a href="https://github.com/AdrianDonnelly1/Ca2"><h1>DB</h1></a>
-
-        <!-- calling the js function with the button-->
+        <h1>BIO</h1>
+        <!-- calling the js function -->
         <span onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
       </nav>
       <header>
         <section>
-          <h1>CSS</h1>
-          <p>Welcome to my CSS Website</p>
+          <h1> Meet the team</h1>
         </section>
-        <img src="media/css.png" alt="" class="davidimg"/>
+        
       </header>
 
       <main>
         <section class="section_box">
-          <h1>What is CSS</h1>
+          <h1>David Byrne</h1>
           <p>
-            >When using CSS it can link to multiple pages all tieing back to the
-            one original style or you can use multiple style sheets by just
-            linking the in the html file under theyr name to give each a page a
-            diffrent feel. Developers use CSS in they websites to give it a
-            diffrent feel other wise it woSuld just be a plain white page with
-            content on it.
+            David Byrne is currently a first year student in TUD. He chose to study computer science in TUD as it is his local university 
+            and close to his job in the Square Tallaght. He currently works part time in Vodafone while pursuing his studies in TUD.
           </p>
         </section>
         <section class="section_box">
-          <h1>External style sheets</h1>
+          <h1>Adrian Costea</h1>
           <p>
-            Devlopers tend to use seperate documents called a style sheet with
-            css at the end of it. The .css lets the code understand that it is a
-            stlye sheet and the link doesnt appear in the actual website it runs
-            seperate to it but controlls what the user will see at the finished
-            site, for example the developer can section out his work into
-            diffrent classes and call upon them in the css file allowing him to
-            set specific font styles, font sizes and loction on the screen and
-            colors that show on the page like the background.
+            insert bio here
           </p>
         </section>
         <section class="section_box">
-          <h1>Class Selection</h1>
+          <h1>Sean Connaughton</h1>
           <p>
-            When dealing with blocks of code in html it can become tedius to
-            have to call in each section you want to change in the css file and
-            can become complex. the workaround for developers is to set classes
-            in the code for example you could single out one section or multiple
-            by doing "section class = "insert your desired name" then go to your
-            seperate css file and call the name in the file by going .insert the
-            name you used and it will only effect whats in the desired class. It
-            can be much easier to use classes especially when you have blocks of
-            code you want to work on and using specific easy to understand
-            nameing conventions if you have to pass the code to someone else
-            they can just pick up where you left off.
+            insert bio here
           </p>
         </section>
+        <section class="section_box">
+            <h1>Adrian Donnelly</h1>
+            <p>
+              Adrian is currently a first year student in TUD doing computing. 
+
+            </p>
+          </section>
       </main>
       <footer>
         <p>
@@ -107,8 +93,7 @@
         if (open.matches) content.style.marginRight = "13rem";
         else content.style.marginRight = "0rem";
       }
-      //close nav function
-      //changes with to 0, making it invisible
+  
       function closeNav() {
         side_nav.style.width = "0";
         content.style.marginRight = "0";
