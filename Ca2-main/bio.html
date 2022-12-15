@@ -21,14 +21,13 @@
     <!-- everything inside the sidenav -->
     <div id="sidenav" class="sidenav">
       <a href="#" class="closebtn" onclick="closeNav()"
-        ><i class="fa-solid fa-x"></i
-      ></a>
+        ><i class="fa-solid fa-x"></i></a>
+        <a href="index.html" class="home"><p>Home</p></a>
+      <a href="Html.html"><p>Html</p></a>
+      <a href="Css.html"><p>Css</p></a>
       <a href="flexbox.html"><p>Flexbox</p></a>
       <a href="Colour.html"><p>Colour</p></a>
       <a href="Accessibility.html"><p>Accessibility</p></a>
-      <a href="Html.html"><p>Html</p></a>
-      <a href="Css.html"><p>Css</p></a>
-      
     </div>
     <div id="content">
       <nav>
@@ -38,38 +37,40 @@
       </nav>
       <header>
         <section>
-          <h1> Meet the team</h1>
+          <h1>Meet the team</h1>
         </section>
-        
       </header>
 
       <main>
         <section class="section_box">
           <h1>David Byrne</h1>
           <p>
-            David Byrne is currently a first year student in TUD. He chose to study computer science in TUD as it is his local university 
-            and close to his job in the Square Tallaght. He currently works part time in Vodafone while pursuing his studies in TUD.
+            David Byrne is currently a first year student in TUD. He chose to
+            study computer science in TUD as it is his local university and
+            close to his job in the Square Tallaght. He currently works part
+            time in Vodafone while pursuing his studies in TUD.
           </p>
         </section>
         <section class="section_box">
           <h1>Adrian Costea</h1>
           <p>
-            Adrian Costea is currently in his first year of studying computing in TUD, Tallaght. 
+            Adrian Costea is currently in his first year of studying computing
+            in TUD, Tallaght.
           </p>
         </section>
         <section class="section_box">
           <h1>Sean Connaughton</h1>
           <p>
-            Sean Connaughton is is studying computing as a first year student in TUD, Tallaght.
+            Sean Connaughton is is studying computing as a first year student in
+            TUD, Tallaght.
           </p>
         </section>
         <section class="section_box">
-            <h1>Adrian Donnelly</h1>
-            <p>
-              Adrian is currently a first year student in TUD doing computing. 
-
-            </p>
-          </section>
+          <h1>Adrian Donnelly</h1>
+          <p>
+            Adrian is currently a first year student in TUD doing computing.
+          </p>
+        </section>
       </main>
       <footer>
         <p>
@@ -84,8 +85,8 @@
       //changing the width of the side nave from 0(closed) to 13rem(open)
       //second function in both opening and cloing moves the content of main to the left by 13rem
       const side_nav = document.getElementById("sidenav"),
-         content = document.getElementById("content");
-  
+        content = document.getElementById("content");
+
       function openNav() {
         side_nav.style.width = "13rem";
         console.log(open.matches);
@@ -93,12 +94,12 @@
         if (open.matches) content.style.marginRight = "13rem";
         else content.style.marginRight = "0rem";
       }
-  
+
       function closeNav() {
         side_nav.style.width = "0";
         content.style.marginRight = "0";
       }
-  
+
       const open = window.matchMedia("(min-width: 640px)");
     </script>
   </body>
