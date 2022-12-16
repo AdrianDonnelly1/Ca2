@@ -1,92 +1,120 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="https://kit.fontawesome.com/71e0b3e869.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/71e0b3e869.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- everything inside the sidenav -->
     <div id="sidenav" class="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
-        <a onclick="closeNav()"href="Css.html"><p>Css</p></a>
-        <a  onclick="closeNav()" href="flexbox.html"><p>Flexbox</p></a>
-        <a  onclick="closeNav()" href="Colour.html"><p>Colour</p></a>
-        <a  onclick="closeNav()" href="Accessibility.html"><p>Accessibility</p></a>
-        <a  onclick="closeNav()" href="bio.html"><p>Bio</p></a>
-      </div>
-<div id ="content">
-    <nav>
+      <a href="#" class="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-x"></i
+      ></a>
+      <a href="Html.html"><p>Html</p></a>
+      <a href="Css.html"><p>Css</p></a>
+      <a href="flexbox.html"><p>Flexbox</p></a>
+      <a href="Colour.html"><p>Colour</p></a>
+      <a href="Accessibility.html"><p>Accessibility</p></a>
+      <a href="bio.html"><p>Bio</p></a>
+    </div>
+    <div id="content">
+      <nav>
         <a href="https://github.com/AdrianDonnelly1/Ca2"><h1>Home</h1></a>
         <!-- calling the js function -->
-        <span  onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
-    </nav>
-    <header>
+        <span onclick="openNav()"> <i class="fa-solid fa-equals"></i></span>
+      </nav>
+      <header>
         <section>
-        <h1>Group 4</h1>
-        <p> Visual Design project</p>
+          <h1>Group 4</h1>
+          <p>Visual Design project</p>
         </section>
-        <img src="media/Group 1d.png" class="box">
-    </header>
+        <img src="media/Group 1d.png" class="box" />
+      </header>
 
-    <main>
+      <main>
         <section class="section_box">
-        <h1> Overview of the project</h1>
-            <p> As a group we set out to make a website containing everyting important to visual design and make it acessible, meaning no colour coding of spesific things without 
-                clear text to indicte what they do. the website is spesificly designed to be as easy as possible to use while looking and functioning well. We achieved this with the use
-                of Flex, media queries, a well designed colour pallet and an easy to use side bar, directing you to each page.
-            </p>
+          <h1>Overview of the project</h1>
+          <p>
+            As a group we set out to make a website containing everyting
+            important to visual design and make it acessible, meaning no colour
+            coding of spesific things without clear text to indicte what they
+            do. the website is spesificly designed to be as easy as possible to
+            use while looking and functioning well. We achieved this with the
+            use of Flex, media queries, a well designed colour pallet and an
+            easy to use side bar, directing you to each page.
+          </p>
         </section>
         <section class="section_box">
-            <h1>Content structure</h1>
-            <p> Our website is structured using an expandable sidebar, with links to all of the different sites we have created. on the nav bar the sites will rotate, meaning the site you are meant to vist next will be
-                ontop but if acess is need to any of the other pages, it is easly achieved. The use of this keeps the website clean aswell as making it functional, 
-                This was achieved using a javascript function to animate the width when the open button and close buttons are pressed. 
-            </p>
+          <h1>Content structure</h1>
+          <p>
+            Our website is structured using an expandable sidebar, with links to
+            all the different sites we have created. on the nav bar the sites
+            will rotate, when moving to a different page,meaning the site you
+            are meant to visit next will be on top but if access is need to any
+            of the other pages, it is easily achieved. The use of this keeps the
+            website clean as well as making it functional, this was achieved
+            using a JavaScript function to animate the width when the open
+            button and close buttons are pressed.
+          </p>
+        </section>
+        <section class="section_box">
+          <h1>Device Support</h1>
+          <p>
+            Through the use of media queries in both css and java script we have
+            made the website accessible in both desktop environments and on
+            mobile devices, as demonstrated on the flexbox site, when shrunk to
+            a mobile device, the desktop picture disappears and a new, more
+            mobile friendly picture appears, also the sidebar when used in
+            desktop size will push the content aways from it, making it visible
+            as well as the rest of the content on the page. we did this because
+            there is enough space to have both visible at the same time. when
+            switching to mobile, the sidebar does not change the main page
+            content as the is not enough room.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>
+          Project by: Adrian Donnelly, David Byrne, Adrian Costea, Sean
+          Connaughton
+        </p>
+      </footer>
+    </div>
 
-            </section>
-            <section class="section_box">
-                <h1>Device Support</h1>
-                <p> Through the use of media queries in both css and java script we have made the website acessible in both desktop enviornments and on mobile devices,
-                    as demonstrated on the flexbox site, when shrunk to a mobile device, the desktop picture disapears and a new, more moblie friendly picture appears,
-                    also the sidebar when used in deskop size will push the content aways from it,making it visible aswell as the rest of the content on the page.
-                    we did this because there is enough space to have both visible at the same time. when switiching to mobile, the sidebar doesnt change the main page content as the isnt enough room.
-                </p>
-    
-                </section>
-    </main>
-    <footer>
-        <p>Project by: Adrian Donnelly, David Byrne, Adrian Costea, Sean Connaughton</p>
-    </footer>
-</div>
+    <script>
+      //js functions for opening and closing the sidenav
+      //changing the width of the side nave from 0(closed) to 13rem(open)
+      //second function in both opening and cloing moves the content of main to the left by 13rem
+      const side_nav = document.getElementById("sidenav"),
+        content = document.getElementById("content");
 
-<script>
-    //js functions for opening and closing the sidenav
-    //changing the width of the side nave from 0(closed) to 13rem(open)
-    //second function in both opening and cloing moves the content of main to the left by 13rem
-    const side_nav = document.getElementById("sidenav"),
-       content = document.getElementById("content");
+      function openNav() {
+        side_nav.style.width = "13rem";
+        console.log(open.matches);
 
-    function openNav() {
-      side_nav.style.width = "13rem";
-      console.log(open.matches);
+        if (open.matches) content.style.marginRight = "13rem";
+        else content.style.marginRight = "0rem";
+      }
 
-      if (open.matches) content.style.marginRight = "13rem";
-      else content.style.marginRight = "0rem";
-    }
+      function closeNav() {
+        side_nav.style.width = "0";
+        content.style.marginRight = "0";
+      }
 
-    function closeNav() {
-      side_nav.style.width = "0";
-      content.style.marginRight = "0";
-    }
-
-    const open = window.matchMedia("(min-width: 640px)");
-  </script>
-</body>
+      const open = window.matchMedia("(min-width: 640px)");
+    </script>
+  </body>
 </html>
